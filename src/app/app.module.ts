@@ -5,6 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { CallNumber } from '@ionic-native/call-number';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { SQLite } from '@ionic-native/sqlite';
+import { Toast } from '@ionic-native/toast';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -28,6 +30,8 @@ import { HomePage } from '../pages/home/home';
     SplashScreen,
     CallNumber,
     InAppBrowser,
+    SQLite,
+    Toast,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

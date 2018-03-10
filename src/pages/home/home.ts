@@ -2,6 +2,7 @@ import {Component, enableProdMode} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
 import {InAppBrowser, InAppBrowserOptions} from '@ionic-native/in-app-browser';
+import {SqlitePage} from '../pages/sqlite/sqlite';
 
 enableProdMode();
 @Component({
@@ -50,6 +51,10 @@ export class HomePage {
   public openWithCordovaBrowser(url : string){
     let target = "_self";
     this.theInAppBrowser.create(url,target,this.options);
+  }
+  public openSqlitePage()
+  {
+    this.navCtrl.push(SqlitePage)
   }
 
 }
