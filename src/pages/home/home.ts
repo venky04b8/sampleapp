@@ -9,10 +9,9 @@ enableProdMode();
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,private callNumber: CallNumber) {
 
   }
-  constructor(private callNumber: CallNumber) { }
 
   launchDialer(n:string){
     this.callNumber.callNumber(n, true)
