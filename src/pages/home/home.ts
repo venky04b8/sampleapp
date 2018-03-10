@@ -2,7 +2,7 @@ import {Component, enableProdMode} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
 import {InAppBrowser, InAppBrowserOptions} from '@ionic-native/in-app-browser';
-import {SqlitePage} from '../pages/sqlite/sqlite';
+import { SqlitePage } from '../sqlite/sqlite';
 
 enableProdMode();
 @Component({

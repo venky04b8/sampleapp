@@ -10,11 +10,17 @@ import { Toast } from '@ionic-native/toast';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { SqlitePage } from '../pages/sqlite/sqlite'
+import { AddDataPage } from '../pages/add-data/add-data'
+import { EditDataPage } from '../pages/edit-data/edit-data'
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SqlitePage,
+    AddDataPage,
+    EditDataPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,10 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    SqlitePage,
+    AddDataPage,
+    EditDataPage
   ],
   providers: [
     StatusBar,
