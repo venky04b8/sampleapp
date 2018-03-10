@@ -14,8 +14,12 @@ export class HomePage {
   }
 
   launchDialer(n:string){
-    this.callNumber.callNumber(n, true)
-        .then(() => console.log('Launched dialer!'))
-        .catch(() => console.log('Error launching dialer'));
+    // this.callNumber.callNumber(n, true)
+    //     .then(() => console.log('Launched dialer!'))
+    //     .catch(() => console.log('Error launching dialer'));
+    setTimeout(() => {
+      window.open(`tel:${n}`, '_system');
+    },100);
   }
+
 }
