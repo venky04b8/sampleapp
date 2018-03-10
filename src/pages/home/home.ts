@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, enableProdMode} from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+enableProdMode();
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
